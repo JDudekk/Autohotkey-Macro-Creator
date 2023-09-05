@@ -22,7 +22,7 @@ function populateSelect() {
 
     for (var i = 0; i < values.length; i++) {
         var option = document.createElement("option");
-        option.value = valuesHidden[i];
+        option.value = ValuesHidden[i];
         option.text = valuesVisible[i];
         selectElement.appendChild(option);
     }
