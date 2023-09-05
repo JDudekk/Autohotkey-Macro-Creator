@@ -10,28 +10,20 @@ function adjustTextareaHeight() {
 
 function populateSelect() {
     var selectElement = document.getElementById("beforeSelect");
-    var values = 
+    var valuesVisible = 
     [
-        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
-        "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
-        "U", "V", "W", "X", "Y", "Z",
-        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
-        "Escape", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12",
-         "Backspace", 
-        "Space", "CapsLock", "ScrollLock", "NumLock", "PrintScreen", "Pause",
-        "Insert", "Delete", "Home", "End", "PgUp", "PgDown",
-        "Up", "Down", "Left", "Right",
-        "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5",
-        "Numpad6", "Numpad7", "Numpad8", "Numpad9",
-        "NumpadAdd", "NumpadSub", "NumpadMult", "NumpadDiv", "NumpadEnter",
-        "LShift", "RShift", "LControl", "RControl",
-        "LAlt", "RAlt"
+        "Lewy przedni", "Lewy tylni", "Prawy przedni", "Prawy tylni"
     ];
+
+    var ValuesHidden = 
+    [
+        "F11", "F12", "F9", "F10"
+    ]
 
     for (var i = 0; i < values.length; i++) {
         var option = document.createElement("option");
-        option.value = values[i];
-        option.text = values[i];
+        option.value = valuesHidden[i];
+        option.text = valuesVisible[i];
         selectElement.appendChild(option);
     }
 }
