@@ -20,7 +20,7 @@ function populateSelect() {
         "F11", "F12", "F9", "F10"
     ]
 
-    for (var i = 0; i < values.length; i++) {
+    for (var i = 0; i < valuesVisible.length; i++) {
         var option = document.createElement("option");
         option.value = ValuesHidden[i];
         option.text = valuesVisible[i];
